@@ -20,7 +20,7 @@ def restore_to_1202(gravity_assist_program):
     return gravity_assist_program        
 
 def computer(gravity_assist_program):
-    for i in range(0, len(gravity_assist_program) - 5, 4):
+    for i in range(0, len(gravity_assist_program) - 3, 4):
         opcode = gravity_assist_program[i]
         if opcode == 99:
             break
