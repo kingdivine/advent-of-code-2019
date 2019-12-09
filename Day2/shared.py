@@ -2,6 +2,7 @@ def get_gravity_assist_program():
     f = open("data.txt", mode= "r")
     if f.mode == "r":
         content = f.read()
+        f.close()
         return [int(value) for value in content.split(',')]
     else:
         return []
